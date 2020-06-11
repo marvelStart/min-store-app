@@ -1,16 +1,50 @@
 {
   "pages":[
+    "pages/home/home",
+    "pages/types/types",
+    "pages/cart/cart",
+    "pages/member/member",
+    "pages/join/join",
+    "pages/order/order",
+    "pages/goods/goods",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "速配商城",
     "navigationBarTextStyle":"black"
   },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/types/types",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "会员"
+      }
+    ]
+  },
   "usingComponents": {
-    "van-button": "miniprogram_npm/@vant/weapp/button/index"
+    "van-button": "miniprogram_npm/@vant/weapp/button/index",
+    "van-tabbar": "miniprogram_npm/@vant/weapp/tabbar/index",
+    "van-tabbar-item": "miniprogram_npm/@vant/weapp/tabbar-item/index"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
