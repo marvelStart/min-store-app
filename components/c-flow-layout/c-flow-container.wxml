@@ -1,0 +1,24 @@
+<view class="flow-container">
+    <view class="flow-left">
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+    </view>
+    <view class="flow-right">
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+        <view></view>
+    </view>
+</view>

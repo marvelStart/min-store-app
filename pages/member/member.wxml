@@ -1,2 +1,18 @@
-<!--pages/member/member.wxml-->
-<text>pages/member/member.wxml</text>
+<view class="member__header">
+    <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <image wx:else src="{{userInfo.avatarUrl}}"></image>
+    <text>{{userInfo.nickName}}</text>
+</view>
+<view class="member__order">
+    <van-grid>
+        <van-grid-item icon="balance-list-o" text="待付款" />
+        <van-grid-item icon="todo-list-o" text="待收货" />
+        <van-grid-item icon="records" text="待评价" />
+        <van-grid-item icon="after-sale" text="售后" />
+    </van-grid>
+</view>
+<view class="member__cell">
+    <van-cell icon="location-o" title="收货地址" is-link />
+    <van-cell icon="like-o" title="我的收藏" is-link />
+    <van-cell icon="setting-o" title="设置" is-link />
+</view>

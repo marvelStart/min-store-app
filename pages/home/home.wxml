@@ -1,2 +1,34 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<custom-header-bar></custom-header-bar>
+<swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}"
+        interval="{{interval}}"
+        circular="{{circular}}"
+        duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+        </swiper-item>
+    </block>
+</swiper>
+<van-grid>
+    <van-grid-item text="控制器">
+        <image slot="icon" style="width: 32px; height: 32px" src="../../assets/images/控制器.png"></image>
+    </van-grid-item>
+    <van-grid-item text="发电机">
+        <image slot="icon" style="width: 32px; height: 32px" src="../../assets/images/电机.png"></image>
+    </van-grid-item>
+    <van-grid-item text="蓄电池">
+        <image slot="icon" style="width: 32px; height: 32px" src="../../assets/images/电池.png"></image>
+    </van-grid-item>
+    <van-grid-item text="充电器">
+        <image slot="icon" style="width: 32px; height: 32px" src="../../assets/images/充电器.png"></image>
+    </van-grid-item>
+</van-grid>
+<!-- 加盟入驻 -->
+<view class="join-enter">加盟入驻</view>
+<!-- 推荐列表 -->
+<view class="recommend">
+    <view class="recommend-title">为您推荐</view>
+    <c-flow-container></c-flow-container>
+</view>
+<van-divider contentPosition="center">底线</van-divider>

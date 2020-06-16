@@ -1,0 +1,10 @@
+<view class="custom-header-bar">
+<!--    <van-icon name="contact" />-->
+    <block wx:if="{{!title}}">
+        <view class="search-container">
+            <view>控制器</view>
+            <van-icon name="search" />
+        </view>
+    </block>
+    <block wx:else>{{title}}</block>
+</view>

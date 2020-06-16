@@ -5,14 +5,33 @@ Page({
    * 页面的初始数据
    */
   data: {
+    title: "商品分类",
+    activeKey: 0,
 
+    typesLabel: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      typesLabel: [
+        {
+          id: 0,
+          name: '控制器'
+        }, {
+          id: 1,
+          name: '发电机'
+        }, {
+          id: 2,
+          name: '蓄电池'
+        }, {
+          id: 3,
+          name: '充电器'
+        },
+      ]
+    })
   },
 
   /**
@@ -66,5 +85,14 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  upper(e) {
+    console.log('upper', e)
+  },
+
+  lower(e) {
+    console.log('lower', e)
+  },
+
 })

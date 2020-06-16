@@ -1,2 +1,28 @@
-<!--pages/types/types.wxml-->
-<text>pages/types/types.wxml</text>
+<view class="types">
+    <custom-header-bar title="{{title}}"></custom-header-bar>
+    <view class="search-container">
+        <view class="input">
+            <text>控制器</text>
+            <van-icon name="search" />
+        </view>
+    </view>
+    <view class="types-container">
+        <scroll-view
+                style="height: inherit; width: 85px;"
+                scroll-y="true">
+            <van-sidebar active-key="{{ 0 }}">
+                <van-sidebar-item wx:for="{{typesLabel}}" wx:key="id" title="{{item.name}}" />
+            </van-sidebar>
+        </scroll-view>
+        <scroll-view
+                style="height: inherit;"
+                scroll-y="true"
+                bindscrolltoupper="upper"
+                bindscrolltolower="lower">
+            <view class="scroll-ad">广告</view>
+            <view class="scroll-item"></view>
+            <view class="scroll-item"></view>
+            <view class="scroll-item"></view>
+        </scroll-view>
+    </view>
+</view>

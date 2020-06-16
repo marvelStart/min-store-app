@@ -1,1 +1,26 @@
-/* pages/member/member.wxss */
+.member__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 400rpx;
+  background-color: #ffd01e;
+  border-bottom-left-radius: 48px;
+  border-bottom-right-radius: 48px;
+}
+.member__header image {
+  margin-top: 120rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 16rpx;
+}
+.member__header text {
+  margin-top: 20rpx;
+  color: #ffffff;
+}
+.member__order {
+  margin: 20rpx;
+}
+.member__cell {
+  margin: 0 20rpx 60px;
+}

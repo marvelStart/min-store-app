@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "custom-header-bar": "../../custom-header-bar/custom-header-bar"
+  },
   "navigationBarTitleText": "会员中心"
 }

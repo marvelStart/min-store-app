@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    title: "购物车",
 
+    totalPrice: 0,
+    allSelect: false,
+
+    imageURL: "/assets/images/goods.jpg"
   },
 
   /**
@@ -66,5 +71,19 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onClickButton: function () {
+
+  },
+
+  onChange: function (e) {
+    this.setData({
+      allSelect: e.detail
+    })
+  },
+
+  handleStoreCheckbox: function (e) {
+    console.log('store-checkbox', e.detail);
   }
 })

@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "custom-header-bar": "../../custom-header-bar/custom-header-bar",
+    "c-flow-container": "../../components/c-flow-layout/c-flow-container"
+  },
   "navigationBarTitleText": "速配商城"
 }
