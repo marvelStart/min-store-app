@@ -6,6 +6,7 @@
   padding: 0 30rpx;
   height: 80rpx;
   background-color: #ffffff;
+  border-bottom: 2rpx solid #ebedf0;
 }
 .search-container .input {
   display: flex;

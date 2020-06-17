@@ -10,7 +10,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/contact/contact",
-    "pages/contact-detail/contact-detail"
+    "pages/contact-detail/contact-detail",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

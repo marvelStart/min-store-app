@@ -11,21 +11,21 @@
     </block>
 </swiper>
 <van-grid>
-    <van-grid-item text="控制器">
+    <van-grid-item text="控制器" data-type="控制器" bindtap="handleToTypes">
         <image slot="icon" style="width: 32px; height: 32px" src="../../assets/images/控制器.png"></image>
     </van-grid-item>
-    <van-grid-item text="发电机">
+    <van-grid-item text="发电机" data-type="发电机" bindtap="handleToTypes">
         <image slot="icon" style="width: 32px; height: 32px" src="../../assets/images/电机.png"></image>
     </van-grid-item>
-    <van-grid-item text="蓄电池">
+    <van-grid-item text="蓄电池" data-type="蓄电池" bindtap="handleToTypes">
         <image slot="icon" style="width: 32px; height: 32px" src="../../assets/images/电池.png"></image>
     </van-grid-item>
-    <van-grid-item text="充电器">
+    <van-grid-item text="充电器" data-type="充电器" bindtap="handleToTypes">
         <image slot="icon" style="width: 32px; height: 32px" src="../../assets/images/充电器.png"></image>
     </van-grid-item>
 </van-grid>
 <!-- 加盟入驻 -->
-<view class="join-enter">加盟入驻</view>
+<view class="join-enter" bindtap="handleToJoinPage">加盟入驻</view>
 <!-- 推荐列表 -->
 <view class="recommend">
     <view class="recommend-title">产品推荐</view>

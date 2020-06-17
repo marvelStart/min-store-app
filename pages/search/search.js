@@ -1,19 +1,11 @@
-// pages/home/home.js
+// pages/search/search.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: true,
-    circular: true,
-    interval: 2000,
-    duration: 500,
 
-    recommendList: []
   },
 
   /**
@@ -34,11 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-      this.getTabBar().setData({
-        active: 0
-      })
-    }
+
   },
 
   /**
@@ -74,25 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  /**
-   * 进入加盟页面
-   */
-  handleToJoinPage: function () {
-    wx.navigateTo({
-      url: '/pages/join/join'
-    })
-  },
-
-  /**
-   * 跳转分类列表
-   * @param e
-   */
-  handleToTypes: function (e) {
-    const {type} = e.currentTarget.dataset;
-    wx.switchTab({
-      url: `/pages/types/types?type=${type}`
-    })
   }
 })

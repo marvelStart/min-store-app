@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "custom-header-bar": "../../custom-header-bar/custom-header-bar"
+  }
 }
