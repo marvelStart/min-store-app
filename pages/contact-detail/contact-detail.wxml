@@ -1,0 +1,22 @@
+<custom-header-bar arrow="{{true}}" title="{{title}}"></custom-header-bar>
+<van-cell-group>
+    <van-field
+            label="联系人"
+            placeholder="请输入联系人"
+            input-align="right"
+    />
+    <van-field
+            label="手机号"
+            placeholder="请输入手机号"
+            input-align="right"
+    />
+    <van-cell title="省市区" is-link="{{true}}" value="请选择" />
+    <van-field
+            label="详细地址"
+            placeholder="请输入详细地址"
+            input-align="right"
+    />
+</van-cell-group>
+<view style="margin: 20rpx;">
+    <van-button round="{{true}}" size="large" type="info" bindtap="handleAddContact">保存</van-button>
+</view>

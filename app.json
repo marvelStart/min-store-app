@@ -1,14 +1,16 @@
 {
   "pages": [
+    "pages/member/member",
     "pages/home/home",
     "pages/types/types",
-    "pages/member/member",
     "pages/cart/cart",
     "pages/join/join",
     "pages/order/order",
     "pages/goods/goods",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/contact/contact",
+    "pages/contact-detail/contact-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -43,6 +45,7 @@
     ]
   },
   "usingComponents": {
+    "van-popup": "miniprogram_npm/@vant/weapp/popup/index",
     "van-cell": "miniprogram_npm/@vant/weapp/cell/index",
     "van-tag": "miniprogram_npm/@vant/weapp/tag/index",
     "van-card": "miniprogram_npm/@vant/weapp/card/index",
@@ -60,6 +63,5 @@
     "van-tabbar": "miniprogram_npm/@vant/weapp/tabbar/index",
     "van-tabbar-item": "miniprogram_npm/@vant/weapp/tabbar-item/index"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

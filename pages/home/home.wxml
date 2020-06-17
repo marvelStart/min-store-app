@@ -28,7 +28,7 @@
 <view class="join-enter">加盟入驻</view>
 <!-- 推荐列表 -->
 <view class="recommend">
-    <view class="recommend-title">为您推荐</view>
+    <view class="recommend-title">产品推荐</view>
     <c-flow-container></c-flow-container>
 </view>
 <van-divider contentPosition="center">底线</van-divider>

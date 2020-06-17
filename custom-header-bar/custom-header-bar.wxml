@@ -1,5 +1,8 @@
 <view class="custom-header-bar">
 <!--    <van-icon name="contact" />-->
+    <block wx:if="{{arrow}}">
+        <van-icon bindtap="handleBack" style="margin-right: 10px;" name="arrow-left" />
+    </block>
     <block wx:if="{{!title}}">
         <view class="search-container">
             <view>控制器</view>

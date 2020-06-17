@@ -1,0 +1,13 @@
+.contact-manager {
+  margin-bottom: 100rpx;
+}
+.contact-detail text:nth-child(1) {
+  display: inline-block;
+  width: 140rpx;
+}
+.button-container {
+  position: fixed;
+  left: 20rpx;
+  right: 20rpx;
+  bottom: 20rpx;
+}

@@ -106,5 +106,11 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+
+  handleJumpContact: function (e) {
+    wx.navigateTo({
+      url: '/pages/contact/contact'
+    })
   }
 })

@@ -1,0 +1,18 @@
+<custom-header-bar arrow="{{true}}" title="{{title}}"></custom-header-bar>
+<view class="contact-manager">
+    <van-cell label="详细地址">
+        <view slot="title" class="contact-detail">
+            <text>张三</text>
+            <text>17621888888</text>
+        </view>
+        <van-icon slot="right-icon" name="edit" class="custom-icon" />
+    </van-cell>
+</view>
+<view class="button-container">
+    <van-button
+            bindtap="handlePlusContact"
+            size="large"
+            plain="{{true}}"
+            round="{{true}}"
+            type="info">新增收货地址</van-button>
+</view>
